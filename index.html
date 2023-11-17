@@ -7,7 +7,7 @@
     <style>
         body {
             background: url('path-to-repeating-background.jpg') repeat;
-            font-family: 'Comic Sans MS', cursive, sans-serif;
+            font-family: Arial, sans-serif; /* Non-cursive font */
             color: #000;
             text-align: center;
             padding: 0;
@@ -27,18 +27,26 @@
             margin-bottom: 20px;
             border-bottom: 3px double #000;
         }
-        .header img {
-            width: 50px;
-            height: auto;
-            vertical-align: middle;
+        .header h1 {
+            font-size: 32px; /* Larger text size */
+            font-family: Arial, sans-serif; /* Non-cursive font */
+        }
+        .header-img {
+            width: 80px; /* Adjust the width as needed */
+            height: auto; /* Maintain aspect ratio */
+        }
+        .main-photo img {
+            width: 100%; /* Full width */
+            max-width: 900px; /* Maximum width */
+            height: auto; /* Maintain aspect ratio */
         }
         .section {
             margin-bottom: 20px;
             text-align: left;
         }
         .section img {
-            width: 150px;
-            height: auto;
+            width: auto; /* Control size via class or inline styles */
+            height: auto; /* Maintain aspect ratio */
             vertical-align: middle;
             margin-right: 10px;
             border: 3px solid #000;
@@ -55,34 +63,22 @@
             padding: 10px 0;
             margin-top: 20px;
         }
-        .marquee {
-            font-size: 24px;
-            color: #ff0000;
-            background-color: #ffff00;
-        }
-        .stats li {
-            list-style: none;
-            padding: 5px;
-            border-bottom: 1px solid #ddd;
-        }
         /* Responsive Design */
         @media screen and (max-width: 600px) {
-            body {
-                background-size: auto 100%;
-            }
             .container {
                 width: 100%;
                 padding: 10px;
                 box-shadow: none;
             }
-            .marquee {
-                font-size: 16px;
+            .header h1 {
+                font-size: 24px; /* Adjust size for mobile */
             }
-            .footer {
-                font-size: 12px;
+            .header-img {
+                width: 50px; /* Smaller width for mobile devices */
+                height: auto;
             }
-            .section img {
-                width: 100px;
+            .section img, .main-photo img {
+                width: 100%; /* Full width on mobile */
             }
             .section-content {
                 display: block;
@@ -99,38 +95,49 @@
             <span class="marquee">Welcome to DateGarrettHaynes.com!</span>
             <img src="remy_dumping.gif" alt="decorative image">
         </div>
+
+        <div class="main-photo">
+            <img src="main-garrett-photo.jpg" alt="Garrett looking great">
+        </div>
         
         <!-- About Garrett -->
         <div class="section">
-            <img src="garrett_fishing.jpg" alt="Garrett's Photo" class="photo">
+            <img src="about_garrett.jpg" alt="Garrett's Photo" class="photo">
             <div class="section-content">
                 <h2>About Garrett</h2>
                 <p>
-                    Garrett, known for his wit and charm, is someone who doesn't take life too seriously—except when it comes to Mario Kart championships.
+                    Garrett, known for his wit and charm, is someone who doesn't take life too seriously—except when it comes to BBQ and fine, country women.
+                    [INSERT PERKS OF DATING GARRETT HERE]
                 </p>
             </div>
         </div>
 
         <!-- Garrett's Interests -->
         <div class="section">
-            <img src="path-to-interests-gif.gif" alt="Interests Image" class="photo">
+            <img src="garrett_interests.jpg" alt="Interests Image" class="photo">
             <div class="section-content">
                 <h2>Interests</h2>
                 <p>
-                    He enjoys long philosophical debates over a glass of whiskey and has a soft spot for 80s rock ballads. 
+                    Thick latinas
                 </p>
             </div>
         </div>
 
         <!-- Garrett's Stats -->
         <div class="section">
-            <img src="path-to-stats-gif.gif" alt="Stats Image" class="photo">
+            <img src="garrett_mime.jpg" alt="Stats Image" class="photo">
             <div class="section-content">
                 <h2>Garrett's Stats</h2>
                 <ul class="stats">
-                    <li>Fish Caught: <strong>52 (and counting)</strong></li>
-                    <li>Hours Boated: <strong>Over 300</strong></li>
+                    <li>Truck height off ground: <strong>36"</strong></li>
+                    <li>Skinny jeans owned: <strong>0?</strong></li>
+                    <li>Head Size: <strong>big (big brain tho)</strong></li>
+                    <li>Boats owned: <strong>1.2</strong></li>
+                    <li>Boat Breakdown percentage: <strong>15%!</strong></li>
                     <li>Ribs Smoked: <strong>75 racks</strong></li>
+                    <li>Grills owned: <strong>3</strong></li>
+                    <li>Dogs Kept Alive: <strong>1</strong></li>
+
                     <!-- Add more stats as needed -->
                 </ul>
             </div>
@@ -138,11 +145,11 @@
 
         <!-- Contact -->
         <div class="section">
-            <img src="path-to-contact-gif.gif" alt="Contact Image" class="photo">
+            <img src="angry_remy.jpg" alt="Contact Image" class="photo">
             <div class="section-content">
                 <h2>Contact</h2>
                 <p>
-                    Got a penchant for puns and a love for adventures? Drop a message to Garrett and find out if you're a match!
+                    Drop a message to Garrett and find out if you're a match!
                 </p>
             </div>
         </div>
