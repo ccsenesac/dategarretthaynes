@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Garrett and Who?</title>
+    <style>
+        body {
+            background: url('path-to-repeating-background.jpg') repeat;
+            font-family: 'Comic Sans MS', cursive, sans-serif;
+            color: #000;
+            text-align: center;
+            padding: 0;
+            margin: 0;
+        }
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.8);
+            border: 1px solid #000;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        }
+        .header {
+            background-color: #ffcc00;
+            padding: 10px 0;
+            margin-bottom: 20px;
+            border-bottom: 3px double #000;
+        }
+        .header img {
+            width: 50px;
+            height: auto;
+            vertical-align: middle;
+        }
+        .section {
+            margin-bottom: 20px;
+            text-align: left;
+        }
+        .section img {
+            width: 150px;
+            height: auto;
+            vertical-align: middle;
+            margin-right: 10px;
+            border: 3px solid #000;
+        }
+        .section-content {
+            display: inline-block;
+            vertical-align: middle;
+            text-align: left;
+            max-width: 70%;
+        }
+        .footer {
+            font-size: 14px;
+            color: #000;
+            padding: 10px 0;
+            margin-top: 20px;
+        }
+        .marquee {
+            font-size: 24px;
+            color: #ff0000;
+            background-color: #ffff00;
+        }
+        .stats li {
+            list-style: none;
+            padding: 5px;
+            border-bottom: 1px solid #ddd;
+        }
+        /* Responsive Design */
+        @media screen and (max-width: 600px) {
+            body {
+                background-size: auto 100%;
+            }
+            .container {
+                width: 100%;
+                padding: 10px;
+                box-shadow: none;
+            }
+            .marquee {
+                font-size: 16px;
+            }
+            .footer {
+                font-size: 12px;
+            }
+            .section img {
+                width: 100px;
+            }
+            .section-content {
+                display: block;
+                width: 100%;
+                margin-top: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <img src="remy_dumping.gif" alt="decorative image">
+            <span class="marquee">Welcome to DateGarrettHaynes.com!</span>
+            <img src="remy_dumping.gif" alt="decorative image">
+        </div>
+        
+        <!-- About Garrett -->
+        <div class="section">
+            <img src="garrett_fishing.jpg" alt="Garrett's Photo" class="photo">
+            <div class="section-content">
+                <h2>About Garrett</h2>
+                <p>
+                    Garrett, known for his wit and charm, is someone who doesn't take life too seriously—except when it comes to Mario Kart championships.
+                </p>
+            </div>
+        </div>
+
+        <!-- Garrett's Interests -->
+        <div class="section">
+            <img src="path-to-interests-gif.gif" alt="Interests Image" class="photo">
+            <div class="section-content">
+                <h2>Interests</h2>
+                <p>
+                    He enjoys long philosophical debates over a glass of whiskey and has a soft spot for 80s rock ballads. 
+                </p>
+            </div>
+        </div>
+
+        <!-- Garrett's Stats -->
+        <div class="section">
+            <img src="path-to-stats-gif.gif" alt="Stats Image" class="photo">
+            <div class="section-content">
+                <h2>Garrett's Stats</h2>
+                <ul class="stats">
+                    <li>Fish Caught: <strong>52 (and counting)</strong></li>
+                    <li>Hours Boated: <strong>Over 300</strong></li>
+                    <li>Ribs Smoked: <strong>75 racks</strong></li>
+                    <!-- Add more stats as needed -->
+                </ul>
+            </div>
+        </div>
+
+        <!-- Contact -->
+        <div class="section">
+            <img src="path-to-contact-gif.gif" alt="Contact Image" class="photo">
+            <div class="section-content">
+                <h2>Contact</h2>
+                <p>
+                    Got a penchant for puns and a love for adventures? Drop a message to Garrett and find out if you're a match!
+                </p>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <div class="footer">
+            <p>© 2023 All Rights Reserved. Garrett's Quest for Love.</p>
+        </div>
+    </div>
+</body>
+</html>
