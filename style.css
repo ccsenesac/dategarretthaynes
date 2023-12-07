@@ -203,3 +203,31 @@ body {
 .info-list li {
     padding: 2px;
 }
+/* Style for the link */
+.attractive-link {
+    /* ... existing styles ... */
+    background-color: #ff0037; /* Background color */
+    color: white; /* Text color */
+    padding: 10px 15px; /* Padding around the text */
+    border-radius: 5px; /* Rounded corners */
+    display: inline-block; /* Allows padding and height adjustments */
+    text-align: center; /* Center text inside the button */
+    font-size: larger;
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s; /* Smooth transition for hover effect */
+}
+
+/* Hover effect */
+.attractive-link:hover {
+    color: #e4e8ec; /* Darker shade when hovering */
+}
+
+/* Keyframes for flashing animation */
+@keyframes flashing {
+    60%, 130% { opacity: 1; }
+    50% { opacity: 0.5; }
+}
+
+/* Applying the animation */
+.attractive-link {
+    animation: flashing 1s infinite; /* Adjust timing as needed */
+}
