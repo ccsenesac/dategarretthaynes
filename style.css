@@ -1,0 +1,205 @@
+
+body {
+    background: url('images/path-to-repeating-background.jpg') repeat;
+    font-family: Arial, sans-serif; /* Non-cursive font */
+    color: #000;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.3);
+    border: 1px solid #000;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+.header {
+    background-color: #ffcc00;
+    padding: 10px 0;
+    margin-bottom: 20px;
+    border-bottom: 3px double #000;
+}
+.header h1 {
+    font-size: 32px; /* Larger text size */
+    font-family: Arial, sans-serif; /* Non-cursive font */
+}
+.header img {
+    width: 30px; /* Adjust the width as needed */
+    height: auto; /* Maintain aspect ratio */
+}
+.text-above-photo {
+    margin-top: 20px; /* Adjust spacing as needed */
+    margin-bottom: 10px; /* Adjust spacing as needed */
+    /* Add more styling as per your design preferences */
+}
+.main-photo img {
+    width: 100%; /* Full width */
+    max-width: 900px; /* Maximum width */
+    height: auto; /* Maintain aspect ratio */
+}
+.section {
+    margin-bottom: 20px;
+    text-align: left;
+}
+.section img {
+    width: 40%; /* Control size via class or inline styles */
+    height:auto; /* Maintain aspect ratio */
+    max-height: 200px;
+    vertical-align: middle;
+    margin-right: auto;
+    margin-left: auto;
+    display: block;
+    border: 3px solid #000;
+}
+.section-content {
+    display: inline-block;
+    vertical-align: middle;
+    text-align: center;
+    max-width: 100%;
+}
+.footer {
+    font-size: 14px;
+    color: #000;
+    padding: 10px 0;
+    margin-top: 20px;
+}
+.social-media {
+    text-align: center;
+    /* ... other styles ... */
+}
+.instagram-link {
+    color: #C13584; /* Or any color you prefer */
+    font-size: 32px; /* Adjust as needed */
+    text-decoration: none; /* Optional: removes underline from link */
+    margin: 10px; /* Spacing around the link */
+    display: inline-flex; /* Align icon and text */
+    align-items: center; /* Align icon and text vertically */
+}
+.instagram-link i {
+    margin-right: 5px; /* Space between icon and text */
+}
+
+/* Main Navigation Menu */
+.main-nav {
+    text-align: center;
+    margin: 20px 0;
+    text-decoration: underline;
+}
+
+.main-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.main-nav ul li {
+    display: inline; /* Display list items in a line */
+    margin-right: 20px; /* Space between items */
+}
+
+.main-nav ul li a {
+    text-decoration: none;
+    color: #000; /* Adjust color as needed */
+    font-size: 18px; /* Adjust font size as needed */
+}
+
+.main-nav ul li a:hover {
+    color: #007bff; /* Adjust hover color as needed */
+}
+
+
+/* Responsive Design */
+@media screen and (max-width: 600px) {
+    .container {
+        width: 100%;
+        padding: 10px;
+        box-shadow: none;
+    }
+    .header h1 {
+        font-size: 24px; /* Adjust size for mobile */
+    }
+    .header img {
+        width: 12%; /* Smaller width for mobile devices */
+        height: auto;
+    }
+    .section img {
+        width: 80%;
+        height: auto;
+        vertical-align: middle;
+    }
+    .main-photo img {
+        width: 100%; /* Full width on mobile */
+    }
+    .section-content {
+        display: block;
+        width: 100%;
+        margin-top: 10px;
+    }
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.profile-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.profile {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    width: 100%;
+    max-width: 400px; /* Adjust for optimal width on mobile */
+    text-align: center;
+    overflow: hidden;
+}
+
+.profile-photo {
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid #ddd;
+}
+
+.about-garrett-photo{
+    width: 100%;
+    height:200px
+}
+
+.profile-info {
+    padding: 15px;
+}
+
+.name {
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+.description {
+    font-size: 1em;
+    color: #555;
+    font-style: italic;
+}
+
+.instagram-link-2 {
+    color: #C13584;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: medium;
+}
+
+.instagram-link:hover {
+    text-decoration: underline;
+}
+
+.info-list li {
+    padding: 2px;
+}
